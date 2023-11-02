@@ -3,12 +3,12 @@ extends layout
 block content
   h1= title
   p Welcome to #{title} I am Vani Battu
-  button(onclick="goFaster()") Click me 
+  button(class ="btn btn-success" onclick="goFaster()") Click me 
   br 
   br
   div(id="faster") Increase the speed
   a(href="/book") show book page
-  script.
+   script.
       var mph = 20;
       var change = 1;
 
