@@ -8,11 +8,11 @@ block content
   - let rows=Number(query.rows)
   - let cols=Number(query.cols)
 
-  if !(Number.isInteger(rows)) && !(Number.isInteger(cols))
+  if !(Number.isInteger(rows)) || !(Number.isInteger(cols))
     p incorrect rows or columns
-  else if (rows<1) && (rows>10)
+  else if (rows<1) || (rows>10)
     p rows are out of range
-  else if (cols<1) && (cols>10)
+  else if (cols<1) || (cols>10)
     p cols are out of range
   else
    table#outer
